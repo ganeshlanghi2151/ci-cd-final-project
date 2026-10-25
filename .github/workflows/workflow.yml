@@ -8,11 +8,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  lint-and-test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -24,6 +24,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install flake8 nose
+
+      - name: Initialize containers
+        run: echo "Initializing containers"
 
       - name: Lint with flake8
         run: flake8 .
