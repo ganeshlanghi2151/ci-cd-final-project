@@ -1,38 +1,24 @@
-# OpenShift CI/CD Final Project
+# ci-cd-final-project
 
 ## Project Name
-**Automated CI/CD Pipeline Using GitHub Actions, Tekton, and OpenShift**
+ci-cd-final-project
 
-## Project Overview
-This project demonstrates the implementation of a Continuous Integration and Continuous Deployment (CI/CD) pipeline for a sample application using GitHub Actions, Tekton, and OpenShift.
+## Project Description
+A CI/CD pipeline project using GitHub Actions, Tekton, and OpenShift to automate code linting, unit testing, image building, and application deployment.
 
-The pipeline automates code quality checks, unit testing, and application deployment to an OpenShift cluster.
+## Technologies
+- GitHub Actions
+- Python
+- Flake8
+- Nose
+- Tekton
+- Buildah
+- OpenShift Pipelines
+- Kubernetes
 
-## Objectives
-- Automate code linting using Flake8 or ESLint.
-- Execute unit tests using Nose or Jest.
-- Automate workflows using GitHub Actions.
-- Define reusable pipeline tasks using Tekton.
-- Deploy and manage the application using OpenShift Pipelines.
+## Project Objectives
+- Automate code linting and unit tests.
+- Define reusable CI/CD tasks using Tekton.
+- Build an application image using Buildah.
+- Deploy the application to OpenShift.
 - Verify pipeline execution and application logs.
-
-## Technologies Used
-- **GitHub:** Source code management
-- **GitHub Actions:** Continuous integration and workflow automation
-- **Python / JavaScript:** Application programming
-- **Flake8 / ESLint:** Code linting
-- **Nose / Jest:** Unit testing
-- **Tekton:** CI/CD pipeline task management
-- **OpenShift:** Application deployment and orchestration
-- **Kubernetes:** Container orchestration platform
-
-## Project Components
-1. `README.md` — Project documentation.
-2. `.github/workflows/workflow.yml` — GitHub Actions workflow.
-3. `.tekton/tasks.yml` — Tekton task definitions.
-4. OpenShift PersistentVolumeClaim — Pipeline storage configuration.
-5. OpenShift Pipeline — Automated application build, test, and deployment workflow.
-
-## Expected Outcomes
-- Automated linting and unit testing.
-- Successful execution
